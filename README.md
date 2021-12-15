@@ -15,5 +15,10 @@ tar -zxvf HammerDB-4.3.tar.gz > install.log
 
 #systems manager
 sudo yum install -y https://s3.region.amazonaws.com/amazon-ssm-region/latest/linux_amd64/amazon-ssm-agent.rpm
+sudo systemctl status amazon-ssm-agent
+
+sudo systemctl enable amazon-ssm-agent
+sudo systemctl start amazon-ssm-agent
+sudo systemctl status amazon-ssm-agent
 
 ```
